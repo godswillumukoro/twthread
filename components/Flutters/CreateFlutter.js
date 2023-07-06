@@ -68,7 +68,7 @@ const CreateFlutter = ({ setFlutters }) => {
   const showSuccess = () => {
     showNotification({
       title: "Success",
-      message: "Your twinthread has been sent",
+      message: "Your twthread has been sent",
       icon: <Check size={18} />,
       autoClose: 5000,
       styles: (theme) => ({
@@ -86,7 +86,7 @@ const CreateFlutter = ({ setFlutters }) => {
         <Group>
           <Textarea
             required
-            placeholder="Send a twinthread..."
+            placeholder="Send a twthread..."
             variant="filled"
             className={classes.media}
             {...form.getInputProps("flutter")}

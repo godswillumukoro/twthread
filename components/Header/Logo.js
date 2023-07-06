@@ -1,3 +1,3 @@
 export function Logo(props) {
-  return <h1>twinthread 🐦‍⬛</h1>;
+  return <h1>twthread 🐦‍⬛</h1>;
 }

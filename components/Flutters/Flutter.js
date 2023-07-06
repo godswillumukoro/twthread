@@ -111,7 +111,7 @@ const Flutter = ({ flutter, setFlutters }) => {
     form.reset();
     setInputDisabled(false);
     setModalOpened(false);
-    showSuccess("Your twinthread has been updated");
+    showSuccess("Your twthread has been updated");
   };
 
   const likeFlutter = async () => {
@@ -152,7 +152,7 @@ const Flutter = ({ flutter, setFlutters }) => {
     const responseJson = await response.json();
     setDeleted(true);
     console.log(responseJson);
-    showSuccess("Your twinthread has been deleted");
+    showSuccess("Your twthread has been deleted");
   };
 
   const showSuccess = (message) => {
@@ -176,13 +176,13 @@ const Flutter = ({ flutter, setFlutters }) => {
           <Modal
             opened={modalOpened}
             onClose={() => setModalOpened(false)}
-            title="Edit your twinthread."
+            title="Edit your twthread."
           >
             <form onSubmit={form.onSubmit((value) => onUpdateFlutter(value))}>
               <Textarea
                 required
                 data-autofocus
-                placeholder="Edit your twinthread."
+                placeholder="Edit your twthread."
                 variant="filled"
                 className={classes.media}
                 {...form.getInputProps("editFlutter")}
